@@ -49,6 +49,7 @@ const Sidebar = () => (
             </SidebarNavLink>
           ))}
           <SidebarNavLink to="/register">Register</SidebarNavLink>
+          <SidebarNavLink to="/login">Login</SidebarNavLink> {/* Add login link */}
         </nav>
       </div>
     </div>
@@ -78,6 +79,7 @@ const MobileSidebar = () => (
           </SidebarNavLink>
         ))}
         <SidebarNavLink to="/register">Register</SidebarNavLink>
+        <SidebarNavLink to="/login">Login</SidebarNavLink> {/* Add login link */}
       </nav>
     </SheetContent>
   </Sheet>

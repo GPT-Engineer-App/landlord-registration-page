@@ -6,6 +6,7 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Layout from "./layouts/default"; // available: default, navbar, sidebar
 import Index from "./pages/Index.jsx";
 import Register from "./pages/Register.jsx";
+import Login from "./pages/Login.jsx"; // Import the new Login component
 const queryClient = new QueryClient();
 
 export const navItems = [
@@ -26,6 +27,7 @@ const App = () => {
             <Route path="/" element={<Layout />}>
               <Route index element={<Index />} />
               <Route path="/register" element={<Register />} />
+              <Route path="/login" element={<Login />} /> {/* Add the login route */}
             </Route>
           </Routes>
         </Router>
