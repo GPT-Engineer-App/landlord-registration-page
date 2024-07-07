@@ -39,7 +39,7 @@ const DesktopNav = () => (
       <span className="sr-only">Acme Inc</span>
     </NavItem>
     <NavItem to="/register">Register</NavItem>
-    <NavItem to="/login">Login</NavItem>
+    <NavItem to="/signin">Sign In</NavItem>
     {navItems.map((item) => (
       <NavItem key={item.to} to={item.to}>
         {item.title}
@@ -66,7 +66,7 @@ const MobileNav = () => (
           <span className="sr-only">Acme Inc</span>
         </NavItem>
         <NavItem to="/register">Register</NavItem>
-        <NavItem to="/login">Login</NavItem>
+        <NavItem to="/signin">Sign In</NavItem>
         {navItems.map((item) => (
           <NavItem key={item.to} to={item.to}>
             {item.title}
